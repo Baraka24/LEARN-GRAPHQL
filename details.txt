@@ -1,0 +1,8 @@
+To start creating the project:
+1. hint npm init followed by Enter+++
+2. Install Apollo and graphql so we may be able to use them npm install apollo-server graphql
+3. npm install nodemon
+4. add "start": "nodemon index.js" to the scripts in package json
+5. add  index.js file then, implement it
+6. run npm start to start server  but it has to crashed
+7. create type-defs.js and resolvers.js files
