@@ -12,5 +12,14 @@ const typeDefs =gql`
     type Query {
         users: [User!]!
     }
+
+    enum nationality {
+        Congolese
+        Rwandan
+        Burundian
+        Kenyan
+        Ugandan
+        Tanzanian
+    }
 `;
 module.exports = {typeDefs};
