@@ -20,6 +20,22 @@ const UserList = [
           age: 22,
           nationality: "Burundian",
         },
+      ],
+      favoriteMovies: [
+        {
+          id: 88,
+          description: "Jack Bauer",
+          author: "Jack",
+          publicationYear: 1998,
+          isInteresting: true
+        },
+        {
+          id: 77,
+          description: "Scorpion",
+          author: "Nick",
+          publicationYear: 2000,
+          isInteresting: false
+        },
       ]
     },
     {
