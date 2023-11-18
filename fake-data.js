@@ -124,4 +124,29 @@ const UserList = [
       ]
     },
   ];
-module.exports = {UserList};
+
+const MovieList =[
+  {
+    id: 88,
+    description: "Jack Bauer",
+    author: "Jack",
+    publicationYear: 1998,
+    isInteresting: true
+  },
+  {
+    id: 77,
+    description: "Scorpion",
+    author: "Nick",
+    publicationYear: 2000,
+    isInteresting: false
+  },
+  {
+    id: 48,
+    description: "Prison Breack",
+    author: "Scofield",
+    publicationYear: 1975,
+    isInteresting: true
+  }
+];
+
+module.exports = {UserList, MovieList};

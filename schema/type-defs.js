@@ -10,9 +10,21 @@ const typeDefs =gql`
         nationality: Nationality!
         friends: [User]
     }
+
+
+    type Movie {
+        id: ID!
+        description: String!
+        author: String!
+        publicationYear: Int!
+        isInteresting: Boolean!
+    }
+
     type Query {
         users: [User!]!
         user(id:ID!): User!
+        movies: [Movie!]!
+        movie(description:String): Movie!
     }
 
     enum Nationality {
