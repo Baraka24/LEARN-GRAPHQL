@@ -50,6 +50,7 @@ const typeDefs =gql`
     type Mutation {
         createUser(input: createUserInput!): User
         updateUsername(input: UpdateUsernameInput!): User
+        deleteUser(id: ID!): User
     }
 `;
 module.exports = {typeDefs};
