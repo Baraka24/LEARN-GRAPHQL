@@ -43,8 +43,13 @@ const typeDefs =gql`
         age: Int!
         nationality: Nationality = Ugandan
     }
+    input updateUserInput {
+        id: ID!
+        newUserName: String!
+    }
     type Mutation {
         createUser(input: createUserInput!): User
+        updateUser(input: updateUserInput): User
     }
 `;
 module.exports = {typeDefs};
