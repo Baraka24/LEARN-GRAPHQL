@@ -36,5 +36,6 @@ const typeDefs =gql`
         Ugandan
         Tanzanian
     }
+
 `;
 module.exports = {typeDefs};
