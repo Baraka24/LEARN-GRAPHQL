@@ -1,3 +1,4 @@
+const { argsToArgsConfig } = require("graphql/type/definition");
 const {UserList, MovieList} = require("../fake-data");
 const _ = require("lodash");
 const resolvers = {
@@ -27,6 +28,19 @@ const resolvers = {
             user.id = lastId +1;
             UserList.push(user);
             return user;
+        },
+        updateUser: (parent, args) => {
+            /* const id = args.input.id;
+            const newUsername = args.input.newUsername; */
+            const {id, newUsername} = args.input;
+            let userUpdated;
+            UserList.forEach((user) => {
+                if(user.id === id) {
+                    user.username = user.newUsername;
+                    userUpdated = user;
+                }
+            });
+            return userUpdated
         }
     }
 };
