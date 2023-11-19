@@ -17,6 +17,12 @@ const resolvers = {
             const description = args.description;
             const movie = _.find(MovieList, {description: description});
             return movie;
+        },
+    },
+    Mutation: {
+        createUser: (parent, args) => {
+            const user = args.input;
+            console.log(user);
         }
     }
 };

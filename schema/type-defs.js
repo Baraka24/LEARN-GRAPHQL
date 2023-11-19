@@ -44,7 +44,7 @@ const typeDefs =gql`
         nationality: Nationality = Ugandan
     }
     type Mutation {
-        createUser(input: createUserInput!): User!
+        createUser(input: createUserInput!): User
     }
 `;
 module.exports = {typeDefs};
