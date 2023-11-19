@@ -25,6 +25,8 @@ const resolvers = {
             //console.log(user);
             const lastId = UserList[UserList.length-1].id;
             user.id = lastId +1;
+            UserList.push(user);
+            return user;
         }
     }
 };
