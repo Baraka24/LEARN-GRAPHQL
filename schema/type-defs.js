@@ -37,5 +37,17 @@ const typeDefs =gql`
         Tanzanian
     }
 
+    input createUserInput {
+        id: ID!
+        name: String!
+        username: String!
+        age: Int!
+        nationality: Nationality!
+        friends: [User]
+        favoriteMovies: [Movie]
+    }
+    type Mutation {
+        createUser(user: User!): User!
+    }
 `;
 module.exports = {typeDefs};
