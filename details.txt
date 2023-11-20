@@ -6,3 +6,7 @@ To start creating the project:
 5. add  index.js file then, implement it
 6. run npm start to start server  but it has to crashed
 7. create type-defs.js and resolvers.js files
+
+
+####Client
+1.cd client and run npx create-react-app . (https://www.apollographql.com/docs/react/get-started)
