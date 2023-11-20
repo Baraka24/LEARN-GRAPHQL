@@ -1,11 +1,20 @@
 
 import './App.css';
+import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
 
 function App() {
-  return (
+  const client = new ApolloClient({
+    uri: 'http://localhost:4000/ ',
+    cache: new InMemoryCache(),
+  });
+  return(
+  <ApolloProvider CLIENT={{client}}>
+
     <div className="App">
-      Hello BARAKA kkkk
+      <h3>List of users:</h3>
     </div>
+
+  </ApolloProvider>
   );
 }
 
