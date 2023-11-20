@@ -10,3 +10,5 @@ To start creating the project:
 
 ####Client
 1.cd client and run npx create-react-app . (https://www.apollographql.com/docs/react/get-started)
+2. Tell the app to connect the API in App.js
+3. cd client npm install @apollo/client graphql
