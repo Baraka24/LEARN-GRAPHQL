@@ -12,6 +12,7 @@ function App() {
   <ApolloProvider CLIENT={{client}}>
 
     <div className="App">
+    <h1>Hello Guys</h1>
       <DisplayData />
     </div>
 
